@@ -89,6 +89,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor
 
+#libjson
+$(call inherit-product, external/json-c/Android.configure.mk)
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 
