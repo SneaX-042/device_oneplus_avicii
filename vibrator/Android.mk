@@ -22,7 +22,7 @@ LOCAL_SRC_FILES := \
     effect.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-    android.hardware.vibrator-ndk_platform \
+    android.hardware.vibrator-V1-ndk_platform \
     libbase \
     libbinder_ndk \
     libcutils \

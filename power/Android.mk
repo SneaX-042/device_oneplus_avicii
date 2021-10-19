@@ -39,7 +39,7 @@ LOCAL_REQUIRED_MODULES := \
     android.hardware.power-service.oneplus_lito.rc
 
 LOCAL_SHARED_LIBRARIES := \
-    android.hardware.power-ndk_platform \
+    android.hardware.power-V1-ndk_platform \
     libbase \
     libbinder_ndk \
     libcutils \

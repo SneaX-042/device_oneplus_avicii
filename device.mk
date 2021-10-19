@@ -222,13 +222,6 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
 
-# OnePlus
-PRODUCT_PACKAGES += \
-    oneplus-fwk.oneplus_lito
-
-PRODUCT_BOOT_JARS += \
-    oneplus-fwk.oneplus_lito
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.oneplus_lito
@@ -290,8 +283,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
