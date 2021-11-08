@@ -21,16 +21,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common SSOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-# SSOS Properties
+# GApps
+TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-EXTRA_FOD_ANIMATIONS := true
+USE_GAPPS := true
 
-PRODUCT_NAME := ssos_avicii
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official
+NAD_BUILD_TYPE := UNOFFICIAL
+
+PRODUCT_NAME := nad_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
