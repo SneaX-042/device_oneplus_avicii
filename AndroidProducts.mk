@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_avicii.mk
+    $(LOCAL_DIR)/nad_avicii.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_avicii-userdebug \
-    ssos_avicii-eng
+    nad_avicii-userdebug \
+    nad_avicii-eng
